@@ -34,3 +34,4 @@ jobs:
           tags: |
             khaair/laravel-ci-cd-demo:latest
             khaair/laravel-ci-cd-demo:${{ github.sha }}
+            
