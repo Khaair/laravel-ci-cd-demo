@@ -1,20 +1,12 @@
 #!/bin/bash
-
 set -e
 
-TAG=${1:-latest}
-IMAGE="khaair/laravel-ci-cd-demo:$TAG"
+docker compose -f docker-compose.prod.yml pull
 
-echo "Deploying image: $IMAGE"
+docker compose -f docker-compose.prod.yml down
 
-docker pull $IMAGE
+docker compose -f docker-compose.prod.yml up -d
 
-docker compose down
+docker compose -f docker-compose.prod.yml exec -T app php artisan migrate --force
 
-docker compose up -d
-
-docker compose exec -T app php artisan migrate --force
-
-docker compose exec -T app php artisan optimize
-
-echo "Deployment finished."
+docker compose -f docker-compose.prod.yml exec -T app php artisan optimize
