@@ -73,7 +73,7 @@
             <!-- Buttons -->
             <div class="mt-14 flex flex-col sm:flex-row justify-center gap-4">
 
-                <a href="{{ route('blogs.index') }}"
+                <a href="/blogs"
                    class="px-8 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 font-semibold transition">
                     Blogs
                 </a>

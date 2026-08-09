@@ -13,8 +13,8 @@
                 Laravel CI/CD Demo
             </a>
             <div class="flex gap-4 text-sm">
-                <a href="{{ url('/') }}" class="text-slate-300 hover:text-white transition">Home</a>
-                <a href="{{ route('blogs.index') }}" class="text-slate-300 hover:text-white transition">Blogs</a>
+                <a href="/" class="text-slate-300 hover:text-white transition">Home</a>
+                <a href="/blogs" class="text-slate-300 hover:text-white transition">Blogs</a>
             </div>
         </div>
     </nav>
