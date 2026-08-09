@@ -73,8 +73,13 @@
             <!-- Buttons -->
             <div class="mt-14 flex flex-col sm:flex-row justify-center gap-4">
 
-                <a href="#"
+                <a href="{{ route('blogs.index') }}"
                    class="px-8 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 font-semibold transition">
+                    Blogs
+                </a>
+
+                <a href="#"
+                   class="px-8 py-3 rounded-xl border border-slate-700 hover:border-emerald-500 hover:text-emerald-400 transition">
                     View Repository
                 </a>
 
