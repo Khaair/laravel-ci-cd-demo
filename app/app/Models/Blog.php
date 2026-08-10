@@ -19,3 +19,5 @@ class Blog extends Model
         'content',
     ];
 }
+
+//ok 01
