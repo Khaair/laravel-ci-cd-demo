@@ -100,5 +100,3 @@ class BlogController extends Controller
 //final 11
 
 //final 20
-
-//final 21
