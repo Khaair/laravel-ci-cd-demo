@@ -52,19 +52,6 @@ services:
       timeout: 5s
       retries: 20
       start_period: 10s
-  
-  phpmyadmin:
-    image: phpmyadmin:latest
-    container_name: phpmyadmin
 
-    ports:
-      - "8081:80"
-
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3306
-
-    depends_on:
-      - mysql
 volumes:
   mysql_data:
