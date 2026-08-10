@@ -19,5 +19,8 @@ class Blog extends Model
         'content',
     ];
 }
+<<<<<<< HEAD
 
 //ok 02
+=======
+>>>>>>> parent of 1b3c2bd (ok 01)
