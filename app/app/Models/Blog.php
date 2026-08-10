@@ -20,4 +20,4 @@ class Blog extends Model
     ];
 }
 
-//ok 01
+//ok 02
